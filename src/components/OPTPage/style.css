@@ -1,0 +1,91 @@
+.otpcard{
+    width: 45%;
+    
+    height: 90%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    box-sizing: border-box;
+ 
+   
+    
+}
+
+
+
+
+
+
+#emailconfirmation ,#otppara {
+    color:var(--text-color);
+    margin-left: 10%;
+    
+}
+#otppara {
+   margin-top: 25px;
+}
+
+#OTP{
+    margin-top: 40px;
+    width: 80%;
+    height: 30px;
+    font-size: 1.2rem;
+    background-color: var(--seondary-color);
+    border: none;
+    border-bottom: rgb(122, 122, 122)  1px solid;
+    align-self: center;
+
+
+}
+#dummymail{
+    font-size: 1rem;
+    color: #4f72b7;
+    margin-left: 10%;
+}
+#emailConfirmationButton{
+    width: 50%;
+    height: 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    background-color: #5271ff;
+    border-radius: 10px;
+    align-self: center;
+    margin-top: 35px;
+    border: none;
+    transition: all ease-out .15s;
+   
+
+}
+#emailConfirmationButton:hover{
+    transform: scale(1.05);
+}
+
+  .swiper{
+    height: 100%;
+    width: 100%;
+  }
+  .swiper-slide img {
+    border-radius: 15px;
+    height: 90%;
+    width: 90%;
+  }
+  .resendotp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: rgb(128, 127, 127);
+    font-weight: 600;
+    margin-top: 40px;
+  }
+
+    #Resend{
+        font-size: 1.2rem;
+    }
+    #Resend:hover{
+        transform: scale(1.1);
+        color: rgb(131, 98, 223);
+    }

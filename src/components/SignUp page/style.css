@@ -1,0 +1,133 @@
+.logincard{
+    width: 45%;
+    
+    height: 90%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.animationcard{
+    width: 45%;
+    
+    height: 90%;
+}
+.signup{
+    display: flex;
+    gap: 7px;
+    margin-left: 10%;
+}
+
+
+
+#logintext {
+    color:var(--text-color);
+    margin-left: 10%;
+}
+#newuser{
+    color:var(--text-color);
+    
+}
+#signup{
+    text-decoration: none;
+}
+#email {
+    margin-top: 40px;
+    width: 80%;
+    height: 30px;
+    font-size: 1.2rem;
+    background-color: var(--seondary-color);
+    border: none;
+    border-bottom: rgb(122, 122, 122)  1px solid;
+    align-self: center;
+
+}
+#Password{
+    margin-top: 30px;
+    width: 80%;
+    height: 30px;
+    font-size: 1.2rem;
+    background-color: var(--seondary-color);
+    border: none;
+    border-bottom: rgb(122, 122, 122) 1px solid;
+    align-self: center;
+}
+#loginbutton{
+    width: 50%;
+    height: 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    background-color: rgb(74, 74, 231);
+    border-radius: 10px;
+    align-self: center;
+    margin-top: 35px;
+    border: none;
+    transition: all ease-out .15s;
+   
+
+}
+#loginbutton:hover{
+    transform: scale(1.05);
+}
+#or{
+    font-size: 1.3rem;
+    color:  rgb(122, 122, 122);
+   padding: 0px 5px;
+  
+   
+}
+.or1 ,.or2 {
+    width: 40%;
+    border-bottom: rgb(122, 122, 122) 1px solid;
+    
+}
+.orboundary{
+    display: flex;
+    justify-content: center;
+    margin-top:30px ;
+    align-items: center;
+}
+.googlesignin{
+    display: flex;
+    gap: 20px;
+    background-color: rgb(74, 74, 231);
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 30px;
+    align-self: center;
+}
+.googlesignin img {
+  height: 30px;
+  width: 30px;
+}
+#googlebutton{
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    transition: all ease-out .15s;
+    border: 0px;
+}
+#googlebutton:hover{
+    transform: scale(1.05);
+}
+  .swiper{
+    height: 100%;
+    width: 100%;
+  }
+  .swiper-slide img {
+    border-radius: 15px;
+  }
+
+  @media (max-width:1056px){
+    .logincard{
+        width: 100%;
+    }
+    
+}
