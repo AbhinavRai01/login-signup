@@ -1,0 +1,27 @@
+/* AlertBox.css */
+
+.alert-box {
+    background-color: rgba(255, 75, 75, 0.1); /* Subtle red for error */
+    color: #ff4b4b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 75, 75, 0.3);
+  }
+  
+  /* Success Message */
+  .alert-box.success {
+    background-color: rgba(75, 255, 127, 0.1);
+    color: #4bff7f;
+    border: 1px solid rgba(75, 255, 127, 0.3);
+  }
+  
+  /* Info Message */
+  .alert-box.info {
+    background-color: rgba(75, 139, 255, 0.1);
+    color: #4b8bff;
+    border: 1px solid rgba(75, 139, 255, 0.3);
+  }
+  

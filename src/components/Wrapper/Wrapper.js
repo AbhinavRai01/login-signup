@@ -1,44 +1,50 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import LoginPage from '../Login page/LoginPage';
-import './style.css';
-import SignUp from '../SignUp page/SignUp';
-import OTPPage from '../OPTPage/OTPPage';
 
-export default function Wrapper() {
-    return (
-        <div>
-            <header>
-                <h1 id="webtitle">website name and logo</h1>
-            </header>
-            <div className="container">
-                <div className="wrapper">
-                    <div className="animationcard">
-                        <Swiper
-                            spaceBetween={30}
-                            pagination={{ clickable: true }}
-                            modules={[Pagination]}
-                            className="mySwiper"
-                        >
-                            <SwiperSlide><img src="/images/user-2.jpg" alt="img" /></SwiperSlide>
-                            <SwiperSlide><img src="/images/user-3.jpg" alt="img" /></SwiperSlide>
-                            <SwiperSlide><img src="/images/user-4.jpg" alt="img" /></SwiperSlide>
-                            <SwiperSlide><img src="/images/user-5.jpg" alt="img" /></SwiperSlide>
-                        </Swiper>
-                    </div>
-                    <Router>
-                        <Routes>
-                            <Route path="/login" element={<LoginPage />} />
-                            <Route path="/signup" element={<SignUp />} />
-                            <Route path="/otp" element={<OTPPage />} />
-                        </Routes>
-                    </Router>
+const Wrapper = ({ CurrentComponent }) => {
+  const location = useLocation();
+
+return (
+    <div className="min-h-screen bg-gradient-to-br from-[#171124] to-[#1c142b]">
+        {/* Header */}
+        {/* Main Container */}
+        <main className="w-full h-[100vh] overflow-x-hidden flex justify-center items-center bg-gradient-to-br from-[#171124] to-[#1c142b] px-4">
+            <div className="w-[90%] md:w-[80%] lg:w-[60%] h-[60%] md:h-[70%] flex flex-col md:flex-row justify-center items-center bg-gradient-to-br from-[#171124] to-[#1c142b] rounded-[50px] shadow-[10px_10px_20px_#120d1c,_-10px_-10px_20px_#221934] transition-all duration-300">
+                {/* Animation Card - Hidden on mobile */}
+                <div className="hidden md:block w-[45%] h-[90%] pl-5">
+                    <Swiper
+                        spaceBetween={30}
+                        pagination={{ clickable: true }}
+                        modules={[Pagination]}
+                        className="h-full w-full"
+                    >
+                        <SwiperSlide>
+                            <img src="/images/user-2.jpg" alt="img" className="rounded-[15px] w-full h-full object-cover" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="/images/user-3.jpg" alt="img" className="rounded-[15px] w-full h-full object-cover" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="/images/user-4.jpg" alt="img" className="rounded-[15px] w-full h-full object-cover" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="/images/user-5.jpg" alt="img" className="rounded-[15px] w-full h-full object-cover" />
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+
+                {/* Current Component - Full width on mobile */}
+                <div className="flex-grow md:w-auto">
+                    {CurrentComponent}
                 </div>
             </div>
-        </div>
-    );
-}
+        </main>
+    </div>
+);
+};
+
+export default Wrapper;
