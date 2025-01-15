@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+
+}
+
+/*root*/
+:root {
+    --text-color: #f6f2f2;
+    --primary-color: rgb(13, 14, 20);
+    --secondary-color: rgb(22, 25, 38);
+}
+
+.container {
+    width: 100vw;
+    height: 95vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #171124, #1c142b);
+}
+
+.font-1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-2 {
+    font-family: "Nunito Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 401;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+}
+
+.wrapper {
+    width: 60%;
+    height: 70%;
+    /*border: black 1px solid;
+     background-color: var(--secondary-color); 
+    border-radius: 10px;
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #171124, #1c142b);
+    border-radius: 50px;
+    background: linear-gradient(145deg, #171124, #1c142b);
+    box-shadow: 10px 10px 20px #120d1c,
+        -10px -10px 20px #221934;
+}
+
+header {
+    background: linear-gradient(145deg, #171124, #1c142b);
+    height: 5vh;
+    display: flex;
+    align-items: center;
+
+
+}
+
+#webtitle {
+    color: var(--text-color);
+}
+
+/*LOGIN CARD CSS*/
+
+
+@media (max-width:1056px) {
+    .wrapper {
+        width: 90%;
+
+
+    }
+}
+
+@media (max-width:1056px) {
+    .wrapper {
+        width: 60%;
+    }
+
+}
+
+@media (max-width:1056px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+
+@media (max-width:600px) {
+    .wrapper {
+        width: 90%;
+    }
+
+}
