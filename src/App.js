@@ -6,13 +6,12 @@ import SignUpPage from './components/SignUp page/SignUp';
 import OTPPage from './components/OPTPage/OTPPage';
 
 
-const clerkPublishableKey = "pk_test_Y29ycmVjdC1wZWxpY2FuLTc0LmNsZXJrLmFjY291bnRzLmRldiQ";
-
+const clerkPublishableKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 const App = () => (
   <ClerkProvider publishableKey={clerkPublishableKey}>
     <Router>
       <Routes>
-        <Route path="/login/*" element={<Wrapper CurrentComponent={<LoginPage />} />} />
+        <Route path="/" element={<Wrapper CurrentComponent={<LoginPage />} />} />
         <Route path="/signup/*" element={<Wrapper CurrentComponent={<SignUpPage />} />} />
         <Route path="/otp/*" element={<Wrapper CurrentComponent={<OTPPage />} />} />
       </Routes>
