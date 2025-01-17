@@ -6,6 +6,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'text-color': '#f6f2f2',
+        'text-color-2': '#3991e3',
+        'primary-color': 'rgb(13, 14, 20)',
+        'secondary-color': 'rgb(22, 25, 38)',
+      },
       fontFamily: {
        'dm-serif': ['"DM Serif Display"', 'serif'],
         'nunito': ['"Nunito Sans"', 'sans-serif'],
