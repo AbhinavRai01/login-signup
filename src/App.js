@@ -17,7 +17,7 @@ const App = () => (
         <Route path="/signup/*" element={<Wrapper CurrentComponent={<SignUpPage />} />} />
         <Route path="/otp/*" element={<Wrapper CurrentComponent={<OTPPage />} />} />
         <Route path="/dashboard" element={<DashboardPage/>} />
-        <Route path="/new" element={<NewPage/>} />
+        <Route path="/new" element={<NewPage messagesArray={[[0,'Welcome, how can I help you?']]} url = '' name = 'mysite'/>}/>
       </Routes>
     </Router>
   </ClerkProvider>
